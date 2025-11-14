@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header .logo {
+    height: 100px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.toolbar {
+    padding: 10px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+/* Markdown 탭 숨기기 */
+.toastui-editor-mode-switch {
+    display: none !important;
+}
+
+/* 헤더1, 헤더2 밑줄 제거 */
+.toastui-editor-contents h1,
+.toastui-editor-contents h2,
+.ProseMirror h1,
+.ProseMirror h2 {
+    border-bottom: none !important;
+}

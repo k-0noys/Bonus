@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 작성 에디터</title>
+
+    <!-- JSZip for hwpx parsing - 먼저 로드 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <!-- TUI Editor CDN -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+    <link rel="stylesheet" href="./css ui 디자인이다.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <img src="./보너스.png" alt="로고" class="logo">
+            문서 작성도우미 BnouS
+        </h1>
+    </div>
+
+    <div class="toolbar">
+        <button class="btn" onclick="document.getElementById('fileInput').click()">불러오기</button>
+        <button class="btn">저장</button>
+        <input type="file" id="fileInput" accept=".hwp,.hwpx" style="display: none;" onchange="loadHwpFile(event)">
+    </div>
+
+    <div id="editor"></div>
+
+    <script src="./자바다 이자슥아.js"></script>
+</body>
+
+</html>
